@@ -26,6 +26,7 @@ body{
     display: flex;
     font-size: 16px;
     justify-content: center;
+    margin-top: 30px;
     align-content: center;
     align-items: center;
     font-family: 'Rubik', sans-serif;
@@ -79,11 +80,11 @@ h2{
     margin: 0  0 0 -15px;
     padding: 20px 0 20px 0;
 }
-.user li{
+li{
     color: var(--DesaturatedBlue);
     margin-left: 15px;
 }
-.user li:nth-child(2) {
+.active{
     color: var(--PaleBlue);
 }
 
@@ -117,28 +118,16 @@ div.activity{
     display: flex;
     justify-content: space-between;    
 }
+.daily, .monthly, .weekly{
+    display: none;
+}
 .activity img{
     align-self: center;
     margin-right: 10px;
     height: 4px;
     width: auto;
 }
-div.weekly{
-    align-items: center;
-    border-radius: 0 0 9px 9px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 13px 25px 13px;
-}
-.weekly span:first-child{
-    font-size: 1.9em;
-    font-weight: 100;
-}
 
-.daily, .monthly{
-    display: none;
-}
 div.selected{
     align-items: center;
     border-radius: 0 0 9px 9px;
@@ -187,6 +176,7 @@ div.selected{
     body{
         align-items: center;
         align-content: center;
+        margin: 30px auto;
         height: 100vh;
         
     }
@@ -237,13 +227,6 @@ div.selected{
         padding-right: 15px;
         padding-top: 10px;
     }
-    div.weekly{
-        flex-wrap: wrap;
-    }
-    .weekly span:first-child{
-        margin-bottom: 10px;
-        font-size: 3.2em;
-    }
     div.selected{
         flex-wrap: wrap;
     }
@@ -252,4 +235,18 @@ div.selected{
         
     }
     /* hover effect */
+    .activity img:hover{
+        cursor: pointer;
+    }
+    li:hover{
+        cursor: pointer;
+        color: var(--PaleBlue);
+    }
+    div.selected:hover{
+        background-color: var(--DesaturatedBlue);
+        cursor: pointer;
+    }
+    div.activity:hover{
+        cursor: pointer;
+    }
 }

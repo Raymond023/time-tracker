@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="jquery-3.7.1.min.js"></script>
   <script defer src="scripts.js"></script>
   
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -23,7 +24,7 @@
       </div>
       <ul>
         <li>Daily</li>
-        <li>Weekly</li>
+        <li class="active">Weekly</li>
         <li>Monthly</li>
       </ul>
       
@@ -37,17 +38,17 @@
 
       <div class="daily">
         <span>5hrs</span>
-        <span>Previous - 7hrs</span>
+        <span>Yesterday - 7hrs</span>
       </div>
 
-      <div class="weekly">
+      <div class="weekly selected">
         <span>32hrs</span>
-        <span>Previous - 36hrs</span>
+        <span>Last Week - 36hrs</span>
       </div>
 
       <div class="monthly">
         <span>103hrs</span>
-        <span>Previous - 128hrs</span>
+        <span>Last Month - 128hrs</span>
       </div>
       
     </section>
@@ -60,17 +61,17 @@
 
       <div class="daily">
         <span>1hr</span>
-        <span>Previous - 2hrs</span>
+        <span>Yesterday - 2hrs</span>
       </div>
 
-      <div class="weekly">
+      <div class="weekly selected">
         <span>10hrs</span>
-        <span>Previous - 8hrs</span>
+        <span>Last Week - 8hrs</span>
       </div>
 
       <div class="monthly">
         <span>23hrs</span>
-        <span>Previous - 29hrs</span>
+        <span>Last Month - 29hrs</span>
       </div>
       
     </section> 
@@ -83,17 +84,17 @@
       </div>
       <div class="daily">
         <span>0hrs</span>
-        <span>Previous - 1hrs</span>
+        <span>Yesterday - 1hrs</span>
       </div>
 
-      <div class="weekly">
+      <div class="weekly selected">
         <span>4hrs</span>
-        <span>Previous - 7hrs</span>
+        <span>Last Week - 7hrs</span>
       </div>
       
       <div class="monthly">
         <span>13hrs</span>
-        <span>Previous - 19hrs</span>
+        <span>Last Month - 19hrs</span>
       </div>
 
     </section>
@@ -106,17 +107,17 @@
       </div>
       <div class="daily">
         <span>1hr</span>
-        <span>Previous - 1hr</span>
+        <span>Yesterday - 1hr</span>
       </div>
 
-      <div class="weekly">
+      <div class="weekly selected">
         <span>4hrs</span>
-        <span>Previous - 5hrs</span>
+        <span>Last Week - 5hrs</span>
       </div>
       
       <div class="monthly">
         <span>11hrs</span>
-        <span>Previous - 18hrs</span>
+        <span>Last Month - 18hrs</span>
       </div>
 
     </section>
@@ -130,23 +131,23 @@
 
       <div class="daily">
         <span>1hr</span>
-        <span>Previous - 3hrs</span>
+        <span>Yesterday - 3hrs</span>
       </div>
 
-      <div class="weekly">
+      <div class="weekly selected">
         <span>5hrs</span>
-        <span>Previous - 10hrs</span>
+        <span>Last Week - 10hrs</span>
       </div>
       
       <div class="monthly">
         <span>21hrs</span>
-        <span>Previous - 23hrs</span>
+        <span>Last Month - 23hrs</span>
       </div>
 
     </section>
 
     <section class="self-care">
-
+      
       <div class="activity">
         <p>Self Care</p>
         <img src="/images/icon-ellipsis.svg" alt="option icon">
@@ -154,17 +155,17 @@
 
       <div class="daily">
         <span>0hrs</span>
-        <span>Previous - 1hr</span>
+        <span>Yesterday - 1hr</span>
       </div>
 
-      <div class="weekly">
+      <div class="weekly selected">
         <span>2hrs</span>
-        <span>Previous - 2hrs</span>
+        <span>Last Week - 2hrs</span>
       </div>
       
       <div class="monthly">
         <span>7hrs</span>
-        <span>Previous - 11hrs</span>
+        <span>Last Month - 11hrs</span>
       </div>
 
     </section>
