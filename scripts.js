@@ -29,3 +29,5 @@ list.click(function () {
     list.removeClass("active");
     $(this).addClass("active");
 });
+
+// hover effect
